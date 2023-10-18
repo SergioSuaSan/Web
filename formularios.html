@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/23-237381_java-html-language-logo-png-transparent-png.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right"> <strong>
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li> </strong>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="py-3">
+                <div id="formularios">
+                    <h1 class="text-center">FORMULARIOS</h1>
+                    <h3>Formulario de Login</h3>
+                    <form action="Login.php" method="get">
+                        <fieldset>
+                            <label for="User">User</label>
+                            <input type="text" name="User" id=""> <br>
+                            <label for="Password">password</label>
+                            <input type="password" name="password" id=""> <br>
+                            <input type="submit" value="Aceptar">
+                        </fieldset>
+
+                    </form>
+                    <h3>Formulario de Registro</h3>
+                    <form action="registro.php" method="get">
+                        <fieldset>
+                            <label for="">User</label>
+                            <input type="text" name="User" id=""> <br>
+                            <label for="">password</label>
+                            <input type="password" name="fecha de nacimiento" id=""> <br>
+                            <label for="">Fecha de nacimiento</label>
+                            
+                            <select name="Dia" id="">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">2</option>
+                                <option value="1">1</option>
+                                
+                            </select>
+                            <select name="Dia" id="">
+                                
+                            </select>
+                            <select name="Dia" id="">
+                                
+                            </select> <br>
+                            <label for="comentario">Comentario</label> <br>
+                            <textarea name="Comentario" id="" cols="50" rows="5"></textarea> <br>
+                            <label for="aficiones">Aficiones</label> <br>
+
+                            <input type="checkbox" name="aficiones" id="cine" value="cine"> 
+                            <label for="Cine">cine</label><br>
+                            <input type="checkbox" name="aficiones" id="Deportes" value="Deportes"> 
+                            <label for="Cine">cine</label><br>
+                            <input type="checkbox" name="aficiones" id="Lectura" value="Lectura"> 
+                            <label for="Cine">cine</label><br>
+                            <input type="checkbox" name="aficiones" id="Viajar" value="Viajar"> 
+                            <label for="Cine">cine</label><br>
+
+                            <label for="Estado Civil">Estado Civil</label> <br>
+                            <fieldset>
+                                <input type="radio" name="ec" id="" value="Soltero/a">
+                                <label for="ec">Soltero/a</label> <br>
+                                <input type="radio" name="ec" id="" value="Casado/a">
+                                <label for="ec">Casado/a</label> <br>
+                                <input type="radio" name="ec" id="" value="Divorciado/a">
+                                <label for="ec">Divorciado/a</label> <br>
+                                <input type="radio" name="ec" id="" value="Viudo/a">
+                                <label for="ec">Viudo/a</label> <br>
+                            </fieldset> <br>
+                            <label for="Foto">Foto</label>
+                            <input type="file" name="" id="">
+
+                            
+                            <input type="submit" value="Aceptar">
+                        </fieldset>
+
+                    </form>
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Sergio Suárez</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/23-237381_java-html-language-logo-png-transparent-png.png" alt="logo" width="250"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right"> <strong>
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li> </strong>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="tablas">
+                    <h1 class="text-center">TABLAS</h1>
+                    <h2>Diferentes tipos de tablas</h2>
+                    <h3>Tabla encabezado de fila</h3>
+                    <p>table>(tr>th*5)+(tr>td{celda}*5)*3</p>
+                    <table class="centrado " border="1">
+                        <tr  class="text-white colortabla " align="center">
+                            <th class="text-white">File</th>
+                            <th class="text-white">Edit</th>
+                            <th class="text-white">Selection</th>
+                            <th class="text-white">View</th>
+                            <th class="text-white">Go</th>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                        <tr>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                            <td>Celda</td>
+                        </tr>
+                    </table>
+                    <h3>Tabla encabezado de columna</h3>
+                    <p>table>tr*4>th+(td{celda})*4</p>
+                    <table border="1">
+                        <tr>
+                            <th>File</th>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                        <tr>
+                            <th>Edit</th>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                        <tr>
+                            <th>Selection</th>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                        <tr>
+                            <th>View</th>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                    </table>
+                    <h3>Tabla con combinaciones de celdas</h3>
+                    <p>table>(tr>th*5)+(tr>td{celda}*5)*3</p>
+                    <table border="1">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+                        <tr>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">celda</td>
+                            <td>celda</td>
+                            <td colspan="4">celda</td>
+                        </tr>
+                        <tr>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                          
+                        </tr>
+                    </table>
+                    <h3>Tabla con diferentes diseños en pares e impares</h3>
+                    <p>table>(tr>th*5)+(tr>td{celda}*5)*3</p>
+                    <table class="tstriped" border="1">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Go</th>
+                        </tr>
+                        <tr>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                        <tr>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                        <tr>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                            <td>celda</td>
+                        </tr>
+                    </table>
+                    <h2 class="text-subr">Tabla del curso</h2>
+                    <p>table>tr*8>th+td*6</p>
+                    <table  class="tablahorario text-center" border="1">
+                        <tr >
+                            <th class="horario">/~\</th>
+                            <td>Lunes</td>
+                            <td>Martes</td>
+                            <td>Miércoles</td>
+                            <td>Jueves</td>
+                            <td>Viernes</td>
+                        </tr>
+                        <tr>
+                            <th class="horario">8:15 9:10</th>
+                            <td rowspan="2">LMSG Puli. Mo, FrJ0 (1 B-302)</td>
+                            <td>ING Corr. Pi, JOMa (1 B-302)</td>
+                            <td rowspan="2">PROG Mart Ca, JOJa (1 B-302)</td>
+                            <td rowspan="2">PROG Mart Ca, JOJa (1 B-302)</td>
+                            <td rowspan="2">BDD León Di, JuEf (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th class="horario">9:10 10:05</th>
+                            <td rowspan="2">BDD León Di, JuEf (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th class="horario">10:05 11:00</th>
+                            <td>ING Corr. Pi, JOMa (1 B-302)</td>
+                            <td>BDD León Di, JuEf (1 B-302)</td>
+                            <td>ENDE Poio Of. Ed (1 B-302)</td>
+                            <td>FOL Marin Ca, RoMa (1 B-302)</td>
+                           
+                        </tr>
+                        <tr>
+                            <th> </th>
+                            <td class="horario" colspan="5">Recreo</td>
+                            
+                        </tr>
+                        <tr>
+                            <th class="horario"> 11:30 12:25</th>
+                            <td rowspan="2">PROG Mart Ca, JOJa (1 B-302)</td>
+                            <td>ENDE Poio Of. Ed (1 B-302)</td>
+                            <td>BDD León Di, JuEf (1 B-302)</td>
+                            <td rowspan="2">SISI Reoy. He, ÓsAn (1 B-302)</td>
+                            <td rowspan="2">SISI Reoy. He, ÓsAn (1 B-302)</td>
+                        </tr>
+                        <tr>
+                            <th class="horario">12:25 13:20</th>
+                            <td rowspan="2">SISI Reoy. He, ÓsAn (1 B-302)</td>
+                            <td rowspan="2">LMSG Puli. Mo, FrJ0 (1 B-302)</td>
+                            
+                           
+                        </tr>
+                        <tr>
+                            <th class="horario">13:20 14:15</th>
+                            <td>FOL Marin Ca, RoMa (1 B-302)</td>
+                            <td>FOL Marin Ca, RoMa (1 B-302)</td>
+                            <td>ENDE Poio Of. Ed (1 B-302)</td>
+                        </tr>
+                    </table>
+                
+                    
+                </div>
+                
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-azul-o text-center text-white py-3">&copy; Sergio Suárez</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

@@ -158,6 +158,9 @@ a {
 .bg-azul-o {
     background-color: rgb(0 157 222);
 }
+.bg-rojo-r {
+    background-color: rgb(255, 2, 2);
+}
 .bg-azul-c {
     background-color: rgb(240, 249, 252);
 }
@@ -257,8 +260,10 @@ span3 {
 }
 
 #prueba dl dt {
-    background-color: aqua;
+    background-color: rgb(34, 88, 88);
     display: inline;
+    color: #ffffff;
+    font-size: larger;
     
 }
 
@@ -272,6 +277,7 @@ span3 {
 }
 #tablas table.colortabla tr th {
     color: rgb(190, 53, 53);
+    
 }
 
 .centrado {

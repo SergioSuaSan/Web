@@ -268,8 +268,9 @@ span3 {
 }
 
 .horario {
-    width: 60px;
+   
     color:rgb(51, 126, 127);
+    background: rgb(240, 240, 240);
 }
 
 #tablas table.centrado tr td {
@@ -297,6 +298,41 @@ table.tstriped tr:nth-child(even) {
     width: 65%;
     margin: 0 auto;
 }
-.sisi {
-    background-color: b4b464;
+.SISI {
+    background-color: rgb(165, 218, 156);
+    color: #000;
 }
+.LMSG {
+    background-color: rgb(247, 202, 201);
+    color: #000;
+}
+.ING {
+    background-color: rgb(119, 179, 235);
+    color: #000;
+}
+.BDD {
+    background-color: rgb(210, 210, 251) ;
+    color: #000;
+}
+.PROG {
+    background-color: rgb(179, 123, 122) ;
+    color: #000;
+}
+.ENDE {
+    background-color: rgb(180, 179, 110);
+    color: #000;
+}
+.FOL {
+    background-color:rgb(128, 129, 187) ;
+    color: #000;
+}
+
+
+.grupo {
+    font-size: large;
+    font-style: italic;
+    color:rgb(51, 126, 127);
+    background: rgb(240, 240, 240);
+}
+
+

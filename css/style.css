@@ -334,5 +334,8 @@ table.tstriped tr:nth-child(even) {
     color:rgb(51, 126, 127);
     background: rgb(240, 240, 240);
 }
+.w-100 {
+    width: 100%;
+}
 
 

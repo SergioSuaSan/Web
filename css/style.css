@@ -351,3 +351,7 @@ table.tstriped tr:nth-child(even) {
 .cb {
     clear: both;
 }
+.registrohtml5 {
+    width: 50%;
+    margin: 0 auto;
+}

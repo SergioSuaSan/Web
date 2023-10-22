@@ -67,9 +67,9 @@
             <div class="py-3">
                 <div id="formularios">
                     <h1 class="text-center">FORMULARIOS</h1>
-                    <h3>Formulario de Login</h3>
-                    <p>Para que el campo de este login no ocupe todo el bloque, crearemos una clase login en el form en el que indicaremos que vuele en el css, moverlo y luego quitarle esa propiedad con clear</p>
                     <form action="Login.php" method="get" class="login">
+                        <h3>Formulario de Login</h3>
+                        <p>Para que el campo de este login no ocupe todo el bloque, crearemos una clase login en el form en el que indicaremos que vuele en el css, moverlo y luego quitarle esa propiedad con clear</p>
                         <p>Para crear un campo usamos la etiqueta fieldset</p>
                         <fieldset>
                             <p>Para poner nombre al campo usamos la etiqueta legend</p>
@@ -84,9 +84,9 @@
                         </fieldset>
 
                     </form>
-                    <h3>Formulario de Registro</h3>
-                    <p>Haremos aquí lo mismo que en login, para que ambos forms estén al lado en vez de uno encima de otro</p>
                     <form action="registro.php" method="get" class="registro">
+                        <h3>Formulario de Registro</h3>
+                        <p>Haremos aquí lo mismo que en login, para que ambos forms estén al lado en vez de uno encima de otro</p>
                         <fieldset>
                             <legend>
                                 Registro
@@ -167,11 +167,11 @@
                         </fieldset>
 
                     </form>
-                    <p>Para evitar que al flotar, el siguiente formulario suba y se quede por debajo, hay que limpiar ambas flitaciones (left and right) con un clear: both en el css. <br>
-                        Lo indicaremos aquí con una clase especiífica</p>
                     <div class="cb"></div>
-
-                    <form action="registrohtml5.php" method="get">
+                    
+                    <form action="registrohtml5.php" method="get" class="registrohtml5">
+                        <p>Para evitar que al flotar, el siguiente formulario suba y se quede por debajo, hay que limpiar ambas flotaciones (left and right) con un clear: both en el css. <br>
+                            Lo indicaremos detrás del form con una clase específica en un div</p>
                         <fieldset>
                             <p>Vamos a usar imputs propios de html5</p>
                             <p>Gracias a los párrafos nos aseguramos de que cada opción es un bloque</p>

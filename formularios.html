@@ -68,8 +68,11 @@
                 <div id="formularios">
                     <h1 class="text-center">FORMULARIOS</h1>
                     <h3>Formulario de Login</h3>
-                    <form action="Login.php" method="get">
+                    <p>Para que el campo de este login no ocupe todo el bloque, crearemos una clase login en el form en el que indicaremos que vuele en el css, moverlo y luego quitarle esa propiedad con clear</p>
+                    <form action="Login.php" method="get" class="login">
+                        <p>Para crear un campo usamos la etiqueta fieldset</p>
                         <fieldset>
+                            <p>Para poner nombre al campo usamos la etiqueta legend</p>
                             <legend>
                                 Login
                             </legend>
@@ -82,10 +85,9 @@
 
                     </form>
                     <h3>Formulario de Registro</h3>
-                    <form action="registro.php" method="get">
-                        <p>Para crear un campo usamos la etiqueta fieldset</p>
+                    <p>Haremos aquí lo mismo que en login, para que ambos forms estén al lado en vez de uno encima de otro</p>
+                    <form action="registro.php" method="get" class="registro">
                         <fieldset>
-                            <p>Para poner nombre al campo usamos la etiqueta legend</p>
                             <legend>
                                 Registro
                             </legend>
@@ -137,13 +139,11 @@
                                 
                             <p>
                                 <p>Para hacer circulos para elegir uno solo usamos el tag input type radio</p>
-                                <label for="Estado Civil">Estado Civil</label> <br>
-                                <fieldset>
+                                <label for="Estado Civil">Estado Civil</label> <br>  
                                     <input type="radio" name="ec" id="" value="Soltero/a">Soltero/a<br>
                                     <input type="radio" name="ec" id="" value="Casado/a">Casado/a<br>
                                     <input type="radio" name="ec" id="" value="Divorciado/a">Divorciado/a<br>               
                                     <input type="radio" name="ec" id="" value="Viudo/a">Viudo/a<br>
-                                </fieldset> <br>
                             </p>
                             
                             <p>
@@ -167,6 +167,9 @@
                         </fieldset>
 
                     </form>
+                    <p>Para evitar que al flotar, el siguiente formulario suba y se quede por debajo, hay que limpiar ambas flitaciones (left and right) con un clear: both en el css. <br>
+                        Lo indicaremos aquí con una clase especiífica</p>
+                    <div class="cb"></div>
 
                     <form action="registrohtml5.php" method="get">
                         <fieldset>

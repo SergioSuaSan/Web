@@ -337,5 +337,17 @@ table.tstriped tr:nth-child(even) {
 .w-100 {
     width: 100%;
 }
+.login {
+    width: 30%;
+    float: left;
+    padding: 40px;
+}
+.registro {
+    width: 50%;
+    float: right;
+    padding: 40px;
+}
 
-
+.cb {
+    clear: both;
+}

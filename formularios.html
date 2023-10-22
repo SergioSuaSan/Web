@@ -83,57 +83,157 @@
                     </form>
                     <h3>Formulario de Registro</h3>
                     <form action="registro.php" method="get">
+                        <p>Para crear un campo usamos la etiqueta fieldset</p>
                         <fieldset>
+                            <p>Para poner nombre al campo usamos la etiqueta legend</p>
+                            <legend>
+                                Registro
+                            </legend>
                             <label for="">User</label>
-                            <input type="text" name="User" id=""> <br>
+                            <input type="text" name="User" id="" placeholder="Name"> <br>
                             <label for="">password</label>
-                            <input type="password" name="fecha de nacimiento" id=""> <br>
-                            <label for="">Fecha de nacimiento</label>
+                            <input type="password" name="fecha de nacimiento" id="" placeholder="Password"> <br>
                             
-                            <select name="Dia" id="">
-                                <option value="1">1</option>
-                                <option value="1">2</option>
-                                <option value="1">2</option>
-                                <option value="1">1</option>
-                                
-                            </select>
-                            <select name="Dia" id="">
-                                
-                            </select>
-                            <select name="Dia" id="">
-                                
-                            </select> <br>
-                            <label for="comentario">Comentario</label> <br>
-                            <textarea name="Comentario" id="" cols="50" rows="5"></textarea> <br>
-                            <label for="aficiones">Aficiones</label> <br>
+                            <p>
 
-                            <input type="checkbox" name="aficiones" id="cine" value="cine"> 
-                            <label for="Cine">cine</label><br>
-                            <input type="checkbox" name="aficiones" id="Deportes" value="Deportes"> 
-                            <label for="Cine">cine</label><br>
-                            <input type="checkbox" name="aficiones" id="Lectura" value="Lectura"> 
-                            <label for="Cine">cine</label><br>
-                            <input type="checkbox" name="aficiones" id="Viajar" value="Viajar"> 
-                            <label for="Cine">cine</label><br>
+                                <p>Para hacer una lista usamos la etiqueta "select", añadiendo varias opciones con la etiqueta "option"</p>
+                                <label for="">Fecha de nacimiento</label>
+                                <select name="Dia" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    
+                                </select>
+                                <select name="Mes" id="">
+                                    <option value="1">Enero</option>
+                                    <option value="2">Febrero</option>
+                                    <option value="3">Marzo</option>
+                                    <option value="4">Abril</option>
+                                </select>
+                                <select name="Anno" id="">
+                                    <option value="1">2000</option>
+                                    <option value="2">2001</option>
+                                    <option value="3">2002</option>
+                                    <option value="4">2003</option>
+                                </select> <br>
+                            </p>
 
-                            <label for="Estado Civil">Estado Civil</label> <br>
-                            <fieldset>
-                                <input type="radio" name="ec" id="" value="Soltero/a">
-                                <label for="ec">Soltero/a</label> <br>
-                                <input type="radio" name="ec" id="" value="Casado/a">
-                                <label for="ec">Casado/a</label> <br>
-                                <input type="radio" name="ec" id="" value="Divorciado/a">
-                                <label for="ec">Divorciado/a</label> <br>
-                                <input type="radio" name="ec" id="" value="Viudo/a">
-                                <label for="ec">Viudo/a</label> <br>
-                            </fieldset> <br>
-                            <label for="Foto">Foto</label>
-                            <input type="file" name="" id="">
-
+                            <p>
+                                <p>Para hacer un comentario usamos la etiqueta textarea</p>
+                                <label for="comentario">Comentario</label> <br>
+                                <textarea name="Comentario" id="" cols="50" rows="5"></textarea> <br>
+                            </p>
+                               
+                            <p>
+                                <p>Para hacer cajas elegibles usamos el tag input type checkbox</p>
+                                <label for="aficiones">Aficiones</label> <br>
+                                <input type="checkbox" name="aficiones" id="cine" value="cine"> Cine<br>
+                                
+                                <input type="checkbox" name="aficiones" id="Deportes" value="Deportes"> Deportes<br>
+                                <input type="checkbox" name="aficiones" id="Lectura" value="Lectura"> Lectura<br>
+                                <input type="checkbox" name="aficiones" id="Viajar" value="Viajar"> Viajar<br>
+                            </p>
+                                
+                            <p>
+                                <p>Para hacer circulos para elegir uno solo usamos el tag input type radio</p>
+                                <label for="Estado Civil">Estado Civil</label> <br>
+                                <fieldset>
+                                    <input type="radio" name="ec" id="" value="Soltero/a">Soltero/a<br>
+                                    <input type="radio" name="ec" id="" value="Casado/a">Casado/a<br>
+                                    <input type="radio" name="ec" id="" value="Divorciado/a">Divorciado/a<br>               
+                                    <input type="radio" name="ec" id="" value="Viudo/a">Viudo/a<br>
+                                </fieldset> <br>
+                            </p>
                             
-                            <input type="submit" value="Aceptar">
+                            <p>
+                                <p>Para crear una barra de elección usamos el tag multiple. Puedes modificar cuantas se ven a la vez con el tag multiple size</p>
+                                <p>Provincias</p>
+                                <select name="provincia" id="" multiple size="5">
+                                    <option value="1">Albacete</option>
+                                    <option value="2">Toledo</option>
+                                    <option value="3">Cuenca</option>
+                                    <option value="4">Guadalajara</option>
+                                    <option value="5">Ciudad Real</option>
+                                </select>
+                            </p>
+                            
+                            <p>
+                                <p>Para subir un archivo usamos el tag input type file</p>
+                                <p>Foto: <input type="file" name="Foto" id=""></p>
+                            </p>
+                            
+                            <input type="submit" value="Enviar">
                         </fieldset>
 
+                    </form>
+
+                    <form action="registrohtml5.php" method="get">
+                        <fieldset>
+                            <p>Vamos a usar imputs propios de html5</p>
+                            <p>Gracias a los párrafos nos aseguramos de que cada opción es un bloque</p>
+                            <legend>Inputs HTML5</legend>
+                            <p>
+                                <p>Para usar el color: input type color </p>
+                                <label for="">Color:</label> <input type="color" name="color" id="">
+                            </p>
+                            <p>
+                                <p>Para usar la fecha: input type date</p>
+                                <label for="">Date:</label> <input type="date" name="date" id="">
+                            </p>
+                            <p>
+                                <p>Datetime no sé si funcionaba?</p>
+                                <label for="">Datetime:</label> <input type="datetime" name="datetime" id="">
+                            </p>
+                            <p>
+                                <p>Para poner fecha y hora: input type datetime-local</p>
+                                <label for="">Datetime-local:</label> <input type="datetime-local" name="datetime-local" id="">
+                            </p>
+                            <p>
+                                <p>Para el email: input type email</p>
+                                <label for="">Email:</label> <input type="email" name="email" id="">
+                            </p>
+                            <p>
+                                <p>Para el mes únicamente: input type month</p>
+                                <label for="">Month:</label> <input type="month" name="month" id="">
+                            </p>
+                            <p>
+                                <p>Para el numero: input type number. Puedes manipular el máximo (max), el mínimo (min) y el numero de pasos (step)</p>
+                                <label for="">Number:</label> <input type="number" name="number" id="" step="1" min="0"
+                                    max="30">
+                            </p>
+
+                            <p>
+                                <p>Para rango usamos input type range. Puedes manipular el número de opciones del rango (min) y el número de pasos (step)</p>
+                                <label for="">Range:</label> <input type="range" name="range" id="" step="1" min="10"
+                                    max="30">
+                             </p>
+
+                            <p>
+                                <p>Para teléfono: input type tel</p>
+                                <label for="">Tel:</label> <input type="tel" name="tel" id="">
+                            </p>
+
+                            <p>
+                                Para la hora: input type time
+                                <label for="">Time:</label> <input type="time" name="time" id="">
+                            </p>
+
+                            <p>
+                                <p>Para la url: input type url</p>
+                                <label for="">Url:</label> <input type="url" name="url" id="">
+                            </p>
+
+                            <p>
+                                <p>Para una única semana: input type week</p>
+                                <label for="">Week:</label> <input type="week" name="week" id="">
+                            </p>
+
+                            <p>
+                                <input type="submit" value="Aceptar" id="" class="btn btn-red">
+                            </p>
+
+                        </fieldset>
                     </form>
                 </div>
                 
